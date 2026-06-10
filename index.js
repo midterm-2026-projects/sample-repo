@@ -15,3 +15,11 @@ export function divide(a, b){
 
     return a/b;
 }
+
+export function login(uname, pass){
+    if(uname === "admin" && pass === "password"){
+        return true;
+    }
+
+    return false;
+}
