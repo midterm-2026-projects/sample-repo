@@ -13,5 +13,5 @@ test("Should divide two numbers", () =>{
     const b = 0;
     const result = divide(a, b);
 
-    expect(result).toBe(0);
+    expect(result).toBe("Cannot divide by zero");
 })
