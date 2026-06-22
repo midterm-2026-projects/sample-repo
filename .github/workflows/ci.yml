@@ -97,7 +97,7 @@ jobs:
     steps:
       - name: Check all jobs passed
         run: |
-          if [[ "${{ needs.backend-tests.result }}" != "success" || "${{ needs.frontend-tests.result }}" != "success"]]; then
+          if [[ "${{ needs.backend-tests.result }}" != "success" || "${{ needs.frontend-tests.result }}" != "success"]] then
             echo "One or more test jobs failed!"
             exit 1
           fi
